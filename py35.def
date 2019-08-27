@@ -12,10 +12,6 @@ CUDA_HOME="/usr/local/cuda"
 export CUDA_HOME
 
 %post
-    # Set up some required environment defaults
-    #. /environment
-    #chmod +x /environment
-
     apt-get -y update && apt-get -y install git \
                                             cmake \
                                             python3 \
@@ -24,8 +20,6 @@ export CUDA_HOME
                                             libglib2.0-0 libsm6 libxext6 libxrender1
     pip3 install numpy pyyaml mkl setuptools cmake cffi
     pip3 install torch==1.0.1 -f https://download.pytorch.org/whl/cu90/stable
-    #pip3 install http://download.pytorch.org/whl/cu90/torch-1.0.1-cp35-cp35m-linux_x86_64.whl  
-    #pip3 install torchvision
     pip3 install visdom
     
     pip3 install pygame
