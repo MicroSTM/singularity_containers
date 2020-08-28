@@ -14,11 +14,11 @@ export CUDA_HOME
 %post
     apt-get -y update && apt-get -y install git \
                                             cmake \
-                                            python3 \
+                                            python3.6 \
                                             python3-pip \
 				            build-essential swig \
                                             libglib2.0-0 libsm6 libxext6 libxrender1
-    pip3 install numpy pyyaml mkl setuptools cmake cffi
+    pip3 install numpy==1.14.2 pyyaml mkl setuptools cmake cffi
     pip3 install anytree
     pip3 install torch==1.0.1 -f https://download.pytorch.org/whl/cu90/stable
     pip3 install visdom
@@ -27,6 +27,9 @@ export CUDA_HOME
     pip3 install Pillow
     pip3 install opencv-python
     pip3 install scipy==1.1.0
+    pip3 install matplotlib
+    pip3 install shapely
+    pip3 install tqdm
 
     git clone https://github.com/pybox2d/pybox2d
     cd pybox2d
