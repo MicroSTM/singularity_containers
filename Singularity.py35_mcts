@@ -18,7 +18,7 @@ export CUDA_HOME
                                             python3-pip \
 				            build-essential swig \
                                             libglib2.0-0 libsm6 libxext6 libxrender1
-    pip3 install numpy==1.14.2 pyyaml mkl setuptools cmake= cffi
+    pip3 install numpy==1.14.2 pyyaml mkl setuptools cmake cffi
     pip3 install anytree
     pip3 install torch==1.0.1 -f https://download.pytorch.org/whl/cu90/stable
     
