@@ -27,9 +27,6 @@ export CUDA_HOME
     pip3 install Pillow
     pip3 install opencv-python
     pip3 install scipy==1.1.0
-    pip3 install matplotlib
-    pip3 install shapely
-    pip3 install tqdm
 
     git clone https://github.com/pybox2d/pybox2d
     cd pybox2d
