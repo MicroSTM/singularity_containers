@@ -21,6 +21,7 @@ export CUDA_HOME
     pip3 install numpy==1.14.2 pyyaml mkl setuptools cmake cffi
     pip3 install anytree
     pip3 install torch==1.0.1 -f https://download.pytorch.org/whl/cu90/stable
+    
     pip3 install dtw
 
     pip3 install pygame
